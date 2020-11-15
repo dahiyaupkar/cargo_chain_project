@@ -22,8 +22,7 @@ def contacts(request):
 
         # send an email
         send_mail(
-            "NAME: " + name_contact + lastname_contact + " PHONE NO.: " + phone_contact + " EMAIL: " + email_contact,
-            'Cargo Chain: Move Anything to Anywhere. WE GOT YOUR BACK',#subject
+            "Appointment Request:",
             message_contact,  # messages
             email_contact,  # from email
             ['cargochainkamloops@gmail.com', email_contact],  # To Email
