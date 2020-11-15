@@ -23,10 +23,10 @@ def contacts(request):
         # send an email
         send_mail(
             "NAME: " + name_contact + lastname_contact + " PHONE NO.: " + phone_contact + " EMAIL: " + email_contact,
-            # subject
+            'Cargo Chain: Move Anything to Anywhere. WE GOT YOUR BACK',#subject
             message_contact,  # messages
             email_contact,  # from email
-            ['dahiyaupkar@gmail.com', email_contact],  # To Email
+            ['cargochainkamloops@gmail.com', email_contact],  # To Email
         )
 
         return render(request, 'contacts.html', {'name_contact': name_contact})
