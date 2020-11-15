@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="cargo chain, moving services, relocation, domesitc removal" />
+    <meta name="description" content="Cargo Chain - Move Anything to Anywhere, WE GOT YOUR BACK.">
+    <meta name="author" content="Upkar Dahiya">
+    <title>Cargo Chain - Move Anything to Anywhere, WE GOT YOUR BACK</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{% static 'website/img/title_img.png' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="{% static 'website/img/apple-touch-icon-57x57-precomposed.png' %}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="{% static 'website/img/apple-touch-icon-72x72-precomposed.png' %}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="{% static 'website/img/apple-touch-icon-114x114-precomposed.png' %}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="{% static 'website/img/apple-touch-icon-144x144-precomposed.png' %}">
+
+    <!-- Google web fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Gochi+Hand" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="{% static 'website/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'website/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'website/css/menu.css' %}" rel="stylesheet">
+    <link href="{% static 'website/css/responsive.css' %}" rel="stylesheet">
+    <link href="{% static 'website/css/elegant_font/elegant_font.css' %}" rel="stylesheet">
+    <link href="{% static 'website/css/fontello/css/fontello.css' %}" rel="stylesheet">
+    <link href="{% static 'website/css/magnific-popup.css' %}" rel="stylesheet">
+
+    <!-- LayerSlider stylesheet  -->
+	<link href="{% static 'website/layerslider/css/layerslider.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+    <!-- Header================================================== -->
+    <header>
+        <div id="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                    <span id="tag_line">"One place for all your moving needs from delivery to installation""</span>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <ul id="top_links">
+                            <li><span id="phone_header">Call us: +1 (250)-319-3268</span></li>
+                            <li><a href="mailto:info@cargochain.ca">info@cargochain.ca</a></li>
+                        </ul>
+                    </div>
+                </div><!-- End row -->
+            </div><!-- End container-->
+        </div><!-- End top line-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a href="{% url 'index' %}"><img src="{% static 'website/img/new_logo.png' %}" width="150" height="35" alt="CargoChain.ca" data-retina="true"></a>
+                    </div>
+                </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="{% static 'website/img/new_logo.png' %}" width="150" height="35" alt="CARGOCHAIN.ca" data-retina="true">
+                        </div>
+                        <a href="{% url 'index' %}" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                        <ul>
+                        <li><a href="{% url 'index' %}" >Home<i class="icon-down-open-mini"></i></a></li>
+                        <li><a href="{% url 'domestic_removals' %}">Moving<i class="icon-down-open-mini"></i></a></li>
+                        <li><a href="{% url 'international_removals' %}">Loading/Unloading<i class="icon-down-open-mini"></i></a></li>
+                        <li><a href="{% url 'special_furnitures' %}">Delivery<i class="icon-down-open-mini"></i></a></li>
+                        <li><a href="{% url 'quotation_wizard' %}">Quick Quotation<i class="icon-down-open-mini"></i></a></li>
+                        <li><a href="{% url 'contacts' %}">CONTACT US<i class="icon-down-open-mini"></i></a></li>
+                        </ul>
+                    </div><!-- End main-menu -->
+                </nav>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+
+{% block content %}
+
+{% endblock %}
+
+
+    <footer>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 col-sm-6">
+                	<h3>About Us</h3>
+                    <p>The online marketplace for all your moving needs. <br> We save you money moving anything to anywhere. <br>We are British Columbia's favorite moving delivery<br> and transport marketplace.</p>
+<!--                    <p><img src="{% static 'website/img/footer_logo_index.jpg' %}" alt="CARGOCHAIN.ca" data-retina="true"></p>-->
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-3">
+                    <h3>Discover</h3>
+                    <ul>
+                        <li><a href="{% url 'contacts' %}">Contact us</a></li>
+                        <li><a href="{% url 'index' %}">FAQ</a></li>
+                        <li><a href="{% url 'quotation_wizard' %}">Quotation</a></li>
+                        <li><a href="{% url 'index' %}#">Terms and condition</a></li>
+                    </ul>
+                </div>
+              <div class="col-md-4 col-sm-3" id="contact_bg">
+                <h3>Contacts</h3>
+                	<ul id="contact_details_footer">
+                    <li id="address_footer">971A Laval Crescent, Kamloops, BC V2C 5P4.<br>Canada</li>
+                    <li id="phone_footer"><a href="tel://+1(250)-319-3268">+1 (250)-319-3268</a>  <a href="tel://+1(250)-319-3268"></a></li>
+                    <li id="email_footer"><a href="mailto:info@cargochain.ca">info@cargochain.ca</a></li>
+                    </ul>
+                 </div>
+            </div><!-- End row -->
+             <div id="social_footer" >
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-google"></i></a></li>
+                            <li><a href="#"><i class="icon-vimeo"></i></a></li>
+                        </ul>
+                </div>
+             </div><!-- End container -->
+    </footer><!-- End footer -->
+
+        <div id="copy">
+        	<div class="container">
+            	© Cargo Chain 2020 - All rights reserved.
+            </div>
+        </div><!-- End copy -->
+
+<div id="toTop"></div><!-- Back to top button -->
+
+<!-- Common scripts -->
+<script src="{% static 'website/js/jquery-1.11.2.min.js' %}"></script>
+<script src="{% static 'website/js/common_scripts_min.js' %}"></script>
+<script src="{% static 'website/js/functions.js' %}"></script>
+
+<!-- LayerSlider script files -->
+<script src="{% static 'website/layerslider/js/greensock.js' %}"></script>
+ <script src="{% static 'website/layerslider/js/layerslider.transitions.js' %}"></script>
+<script src="{% static 'website/layerslider/js/layerslider.kreaturamedia.jquery.js' %}"></script>
+<script type="text/javascript">
+    // Running the code when the document is ready
+    $(document).ready(function(){
+        // Calling LayerSlider on the target element with adding custom slider options
+        $('#layerslider').layerSlider({
+            autoStart: true,
+			responsive: true,
+			responsiveUnder: 1280,
+			layersContainer: 1170,
+            skinsPath: 'layerslider/skins/'
+            // Please make sure that you didn't forget to add a comma to the line endings
+            // except the last line!
+        });
+    });
+</script>
+<script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/chat_widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",{bot_key:"9aeca80874934914",welcome_msg:true,branding_key:"default",server:"https://app.engati.com",e:"p" });</script>
+</body>
+</html>
+

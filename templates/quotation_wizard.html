@@ -1,0 +1,300 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section id="sub_header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8">
+                    	<div class="main_title">
+                            <h1>Ask for a Quotation</h1>
+                            <p>Get started with a Free phone or Online Quote</p>
+                        </div>
+					</div>
+					<div class="col-md-4 col-sm-4" id="position">
+						<ul >
+							<li><a href="index.html">Home</a></li>
+							<li>Active page</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section><!-- End section -->
+        
+        <div class="container margin_60">
+        	<div class="row">
+                <div class="col-md-9">
+                	  <form id="custom" action="" method="POST" class="add_bottom_30">
+      
+                        <input id="website" name="website" type="text" value="" ><!-- Leave for security protection, read docs for details. Delete this comment before to publish. -->
+                        <fieldset title="Personal info">
+                          <legend>Please! enter your info.</legend>
+                          <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>First name</label>
+                                        <input type="text" class="form-control" id="firstname_quote" name="firstname_quote">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Last name</label>
+                                        <input type="text" class="form-control" id="lastname_quote" name="lastname_quote">
+                                    </div>
+                                </div>
+                            </div><!-- End row -->
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" id="email_quote" name="email_quote">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Telephone</label>
+                                        <input type="text" class="form-control" id="phone_quote" name="phone_quote">
+                                    </div>
+                                </div>
+                            </div><!-- End row -->
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Describe your property type as much as possible:rooms, list of furnitures, volumes, etc...</label>
+                                        <textarea name="message_general" id="message_general" style="height:100px" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div><!-- End row -->
+                        </fieldset><!-- End Step one -->
+                        
+                        <!--<fieldset title="Step 2" >
+                          <legend>Pick up Address</legend>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <select class="form-control" name="country_pickup" id="country_pickup">
+                                            <option value="" selected>Select your country</option>
+                                            <option value="Europe">Europe</option>
+                                            <option value="United states">United states</option>
+                                            <option value="Asia">Asia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input type="text" id="city_pickup" name="city_pickup" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Street line</label>
+                                        <input type="text" id="street_pickup" name="street_pickup" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        <input type="text" id="state_pickup" name="state_pickup" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Postal code</label>
+                                        <input type="text" id="postal_code_pickup" name="postal_code_pickup" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Floor</label>
+                                        <select class="form-control" name="floor_pickup" id="floor_pickup">
+                                            <option value="" selected>Select your floor</option>
+                                            <option value="First floor">First floor</option>
+                                            <option value="Second floor">Second floor</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Elevator</label>
+                                        <select class="form-control" name="elevator_pickup" id="elevator_pickup">
+                                            <option value="" selected>Elevator</option>
+                                            <option value="Yes">With elevator</option>
+                                            <option value="No">Without elevator</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>&lt;!&ndash;End row &ndash;&gt;
+                        </fieldset>&lt;!&ndash; End Step two &ndash;&gt;
+
+                        <fieldset title="Step 3" >
+                          <legend>Drop off Address</legend>
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label>Country</label>
+                                    <select class="form-control" name="country_delivery" id="country_delivery">
+                                        <option value="" selected>Select your country</option>
+                                        <option value="Europe">Europe</option>
+                                        <option value="United states">United states</option>
+                                        <option value="Asia">Asia</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label>City</label>
+                                    <input type="text" id="city_delivery" name="city_delivery" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label>Street line</label>
+                                    <input type="text" id="street_delivery" name="street_delivery" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>State</label>
+                                    <input type="text" id="state_delivery" name="state_delivery" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Postal code</label>
+                                    <input type="text" id="postal_code_delivery" name="postal_code_delivery" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Floor</label>
+                                    <select class="form-control" name="floor_delivery" id="floor_delivery">
+                                        <option value="" selected>Select your floor</option>
+                                        <option value="First floor">First floor</option>
+                                        <option value="Second floor">Second floor</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Elevator</label>
+                                    <select class="form-control" name="elevator_delivery" id="elevator_delivery">
+                                        <option value="" selected>Elevator</option>
+                                        <option value="Yes">With elevator</option>
+                                        <option value="No">Without elevator</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>&lt;!&ndash;End row &ndash;&gt;
+                        </fieldset>&lt;!&ndash; End Step three &ndash;&gt;
+
+                        <fieldset title="Step 4" >
+                          <legend>Options</legend>
+                          <h5 style="margin-top:0">Select optional services</h5>
+                          <p class="add_bottom_45">Ei aliquip regione his, errem hendrerit et sea, elit definiebas cu mel. Sea illud aeque te, has cu brute iuvaret molestiae. Omnium omittam ei nec. Inani libris equidem eu vel, minim equidem vis ad, nam eu duis graeco reprehendunt. Ut dicam graeci sea, enim corrumpit at vix.</p>
+                          <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group options">
+                                    <strong>Packing service</strong>
+                                        <label class="switch-light switch-ios pull-right">
+                                        <input type="checkbox" name="option_1" id="option_1" checked value="Yes">
+                                        <span>
+                                        <span>No</span>
+                                        <span>Yes</span>
+                                        </span>
+                                        <a></a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group options">
+                                        <strong>Reassembling</strong>
+                                        <label class="switch-light switch-ios pull-right">
+                                        <input type="checkbox" name="option_2" id="option_2" checked value="Yes">
+                                        <span>
+                                        <span>No</span>
+                                        <span>Yes</span>
+                                        </span>
+                                        <a></a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group options">
+                                        <strong>Cleaning</strong>
+                                        <label class="switch-light switch-ios pull-right">
+                                        <input type="checkbox" name="option_3" id="option_3" value="Yes">
+                                        <span>
+                                        <span>No</span>
+                                        <span>Yes</span>
+                                        </span>
+                                        <a></a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group options">
+                                        <strong>Short term deposit</strong>
+                                        <label class="switch-light switch-ios pull-right">
+                                            <input type="checkbox" name="option_4" id="option_4" value="Yes">
+                                            <span>
+                                            <span>No</span>
+                                            <span>Yes</span>
+                                            </span>
+                                            <a></a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>&lt;!&ndash;End row &ndash;&gt;
+                        </fieldset>&lt;!&ndash; End Step four &ndash;&gt;
+
+                        <fieldset title="Step 5">
+                          <legend>Message</legend>
+                          <div class="form-group">
+							<label>Write your notes or message</label>
+                            <textarea name="message_quote" id="message_quote" style="height:100px" class="form-control"></textarea>
+						  </div>
+                          <p><input name="terms" type="checkbox" value="Yes"> <a data-toggle="modal" data-target="#myModal" href="#" >I accept terms and condition </a></p>
+                        </fieldset>&lt;!&ndash; End Step three &ndash;&gt;-->
+                        
+                        <input type="submit" class="finish" value="Submit!" />
+                      </form>
+             
+                </div><!-- End col-md-9 -->
+                
+                <div class="col-md-3">
+                	<div class="box_style_2">
+                    	<h4>Need Help?</h4>
+                        <h5><i class="icon_globe"></i> By Phone</h5>
+                            <ul>
+                            	 <li><strong>Help center</strong><br><a href="tel://+1(250)-319-3268">+1 (250)-319-3268</a></li>
+                                <li><strong>Office Hours</strong><br><small>Monday to Saturday 8am - 5pm</small></li>
+                                </ul>
+                             <h5><i class="icon_mail_alt"></i> By Email</h5>
+                            <ul>
+                                <li><strong>General Info</strong><br><a href="mailto:info@cargochain.ca">info@cargochain.ca</a></li>
+                                <li><strong>Book a move now!</strong><p class="nopadding">It's never to late. Book Now....!<br><a href="mailto:jass.grewal@cargochain.ca">jass.grewal@cargochain.ca</a></p></li>
+                            </ul>
+                    </div>
+                    
+                </div><!-- End col-md-3 -->
+                
+            </div><!-- End row -->
+        </div><!-- End container -->
+
+{% endblock %}

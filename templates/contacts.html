@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="sub_header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8">
+                    	<div class="main_title">
+                            <h1>Contacts </h1>
+                            <p>Move Anything to Anywhere. WE GOT YOUR BACK</p>
+                        </div>
+					</div>
+					<div class="col-md-4 col-sm-4" id="position">
+						<ul >
+							<li><a href="index.html">Home</a></li>
+							<li>Active page</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section><!-- End section -->
+        
+        <div class="container margin_60">
+        	<div class="row">
+                
+            <div class="col-md-9">
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20228.801520876594!2d-120.36766651934404!3d50.67168338840161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2c6678dd6613%3A0x70097fca3551e763!2s971%20A%20Laval%20Crescent%2C%20Kamloops%2C%20BC%20V2C%205P4!5e0!3m2!1sen!2sca!4v1604084951951!5m2!1sen!2sca" id="map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+               <hr><!-- end map-->
+                    
+              <div id="message-contact"></div>
+                <form method="post" action="{% url 'contacts' %}" >
+                    {% csrf_token %}
+                    {% if name_contact %}
+                    <center>
+                        <h2>Thanks {{name_contact}}!</h2>
+                          <p> We have received your email and will respond shortly ... </p>
+                    </center>
+                    {% else %}
+                    <h1>Get In Touch - {{ name_contact }}</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>First name</label>
+                                <input type="text" class="form-control" id="name_contact" name="name_contact" >
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Last name</label>
+                                <input type="text" class="form-control" id="lastname_contact" name="lastname_contact">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" id="email_contact" name="email_contact" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Phone number</label>
+                                <input type="text" id="phone_contact" name="phone_contact" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Your message</label>
+                                <textarea rows="5" id="message_contact" name="message_contact" class="form-control" style="height:100px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <label>Are you human? 3 + 1 =</label>
+                            <input type="text" id="verify_contact" class=" form-control">
+                            </div>
+                            <input type="submit" value="Submit" class="btn_1 green medium add_bottom_30" id="submit-contact"/>
+                        </div>
+                    </div>
+                </form>                    
+           </div>
+                {% endif %}
+                <!-- End col-md-9 -->
+                
+           <div class="col-md-3">
+                	<div class="box_style_2">
+                        <h5>Address</h5>
+                            <ul>
+                                <li><strong>971A Laval Crescent</strong><br>Kamloops, BC V2C 5P4</li>
+                            </ul>
+                             <h5>Contacts</h5>
+                            <ul>
+                            	 <li><strong>Help center</strong><br><a href="tel://+1(250)-319-3268">+1 (250)-319-3268</a></li>
+                                <li><strong>Office Hours</strong><br><small>Monday to Saturday 8am - 5pm</small></li>
+                                <li><strong>General Info</strong><br><a href="mailto:info@cargochain.ca">info@cargochain.ca</a></li>
+                                <li><strong>Book a move now!</strong><p class="nopadding">It's never to late. Book Now....!<br><a href="mailto:jass.grewal@cargochain.ca">jass.grewal@cargochain.ca</a></p></li>
+                            </ul>
+                    </div>
+                    <div class="quote_banner"><a href="quotation_wizard.html">Need a quotation?</a></div>
+                </div><!-- End col-md-3 -->
+            </div><!-- End row -->
+        </div><!-- End container -->
+{% endblock %}
