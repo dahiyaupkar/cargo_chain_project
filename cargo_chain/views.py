@@ -46,7 +46,34 @@ def quotation_2(request):
 
 
 def quotation_wizard(request):
-    return render(request, 'quotation_wizard.html', {})
+    if request.method == "POST":
+        firstname_quote = request.POST['firstname_quote']
+        lastname_quote = request.POST['lastname_quote']
+        email_quote = request.POST['email_quote']
+        phone_quote = request.POST['phone_quote']
+        street_pickup = request.POST['street_pickup']
+        street_drop = request.POST['street_drop']
+        elevator_pickup = request.POST['elevator_pickup']
+        message_general = request.POST['message_general']
+
+        # send an email
+        send_mail(
+            "Appointment Request:",  # Subject
+            "First Name : " + firstname_quote + "\n" +
+            "Last Name : " + lastname_quote + "\n" +
+            "Email Address : " + email_quote + "\n" +
+            "Phone No. : " + phone_quote + "\n" +
+            "Moving from : " + street_pickup + "\n" +
+            "Moving to : " + street_drop + "\n" +
+            "Type of Move : " + elevator_pickup + "\n" +
+            "Additional info : " + message_general,  # messages
+            email_quote,  # from email
+            ['cargochainkamloops@gmail.com', email_quote],  # To Email
+        )
+
+        return render(request, 'quotation_wizard.html', {'firstname_quote': firstname_quote})
+    else:
+        return render(request, 'quotation_wizard.html', {})
 
 
 def reassembly(request):
