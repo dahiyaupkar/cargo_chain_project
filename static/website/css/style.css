@@ -41,8 +41,17 @@ h1, h2, h3, h4, h5, h6{-webkit-font-smoothing:antialiased; color:#333;}
 h3{ font-size:22px;}
 
 /*General links color*/
-a {color: #629976;text-decoration: none;-webkit-transition: all 0.2s ease;transition: all 0.2s ease; outline:none;}
+a {color: #F27022 ;text-decoration: none;-webkit-transition: all 0.2s ease;transition: all 0.2s ease; outline:none;}
 a:hover,a:focus {color: #111;text-decoration: none; outline:none;}
+
+#textSize{
+    font-size:16px;
+}
+
+#NavBarSize{
+    font-size:15px;
+    font-weight:bold;
+}
 
 a.link_normal{
 	position:relative;
@@ -76,7 +85,7 @@ a.button_intro, .button_intro  {
 	font-family: inherit;
 	font-size: inherit;
 	color:#fff !important;
-	background:#663366;
+	background:#F27022;
 	cursor: pointer;
 	padding: 10px 35px;
 	display: inline-block;
@@ -115,7 +124,7 @@ a.btn_1, .btn_1{
 	font-weight:bold;
 }
 
-a.btn_1.white, .btn_1.white  {background: #fff; color:#629976;}
+a.btn_1.white, .btn_1.white  {background: #fff; color:#F27022;}
 a.btn_1.white:hover, .btn_1.white a:hover  {background: #333; color:#fff;}
 
 a.btn_1.outline,.btn_1.outiline, input .btn_1.outiline{
@@ -140,7 +149,7 @@ a.btn_quote{
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
-	color:#fff;
+	color:#333;
 	background:none;
 	cursor: pointer;
 	padding: 7px 30px;
@@ -155,14 +164,14 @@ a.btn_quote{
 	border-radius: 3px;
 	text-transform:uppercase;
 	font-weight:bold;
-	border:2px solid #fff;
+	border:2px solid #333;
 	float:right;
 	white-space:nowrap;
 	text-shadow:none;
 }
 a.btn_quote:hover{
-	color:#629976;
-	background:#fff;
+	color:#fff;
+	background:#F27022;
 }
 a.btn_full, .btn_full{
 	border: none;
@@ -254,11 +263,12 @@ ul#top_links li:first-child{
 	padding-left:0;
 }
 ul#top_links li #phone_header{
-	color:#636;
+	color:#F27022;
+	font-size:16px;
 }
 #sub_header{
     height: 150px;
-    background: #82ca9c url(../img/sub_header.jpg) no-repeat center center;
+    background: #F27022 url(../img/sub_header.jpg) no-repeat center center;
 	color:#fff;
    background-size: cover;
    -webkit-background-size: cover;
@@ -296,7 +306,7 @@ footer a{
 	color:#fff;
 }
 footer a:hover{
-	color:#82ca9c;
+	color:#F27022;
 }
 footer ul{
 	margin:0;
@@ -337,8 +347,8 @@ footer ul{
 }
 #social_footer ul li a:hover{
 	border:1px solid #fff;
-	background:#fff;
-	color:#111;
+	background:#F27022;
+	color:#fff;
 }
 #contact_bg{
 	background:url(../img/map_footer.png) no-repeat bottom center;
@@ -375,7 +385,7 @@ ul#contact_details_footer li#address_footer, ul#contact_details_footer li#phone_
 	top:-3px
 }
 #copy{
-	background-color:#82ca9c;
+	background-color:#F27022;
 	padding:10px 0;
 	text-align:center;
 	color:#222;
@@ -392,13 +402,13 @@ ul#contact_details_footer li#address_footer, ul#contact_details_footer li#phone_
 	color:#fff;
 }
 #get_quote.green {
-	background:#629976 url(../img/pattern_green.png) repeat;
+	background:#fff url(../img/pattern_green.png) repeat;
 	padding:30px 0;
 	color:#fff;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 #get_quote h3{
-	color:#fff;
+	color:#333;
 	margin:5px 0 0 0;
 	font-family: 'Gochi Hand', cursive;
 	font-size:28px;
@@ -431,7 +441,7 @@ ul#contact_details_footer li#address_footer, ul#contact_details_footer li#phone_
 	border-bottom:2px solid #fff;
 }
 #how_to{
-	background: #629976 url(../img/pattern_green.png) repeat;
+	background: #F27022 url(../img/pattern_green.png) repeat;
 	padding:60px 0 30px 0;
 	color:#fff;
 	font-size:14px;
@@ -440,7 +450,7 @@ ul#contact_details_footer li#address_footer, ul#contact_details_footer li#phone_
 }
 #how_to h3{
 	font-family: 'Gochi Hand', cursive;
-	color: #fff;
+	color: #333;
 	font-size:36px;
 	font-weight:normal;
 	margin-bottom:0;
@@ -469,7 +479,8 @@ ul#contact_details_footer li#address_footer, ul#contact_details_footer li#phone_
 
 /* Home 2 */
 #feat_home{
-	background-color:#663466;
+	/*background-color:#fff;*/
+	background: #fff url(../img/pattern_green.png) repeat;
 	color:#fff;
 }
 .box_feat_2{
@@ -480,8 +491,9 @@ ul#contact_details_footer li#address_footer, ul#contact_details_footer li#phone_
 	color:#629976;
 }
 .box_feat{
-	background-color:#603160;
-	color:#fff;
+	background-color:#F27022;
+	color:#333;
+	font-size:15px;
 	text-align:center;
 	padding:20px 20px 10px 20px;
 	-webkit-border-radius: 10px;
@@ -669,7 +681,7 @@ ul#cat_nav li a:before{
 	content: "\35";
 }
 img.img-responsive.border{
-	border-bottom:3px solid #9bd4af
+	border-bottom:3px solid #F27022
 }
 ul.feat{
 	list-style:none;
@@ -725,7 +737,7 @@ ul.feat li img{
 	margin:0;
 	padding:0;
 	font-size:12px;
-	line-height:14px;
+	line-height:141px;
 }
 .step{
 	border-left: 1px solid #ddd;
