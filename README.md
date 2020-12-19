@@ -6,6 +6,8 @@ Front End: HTML5 CSS4 VANILLA JS JQUERY
 
 Back End:  PHP Django 
 
+Heroku cloud PaaS
+
 Google Analitics API
 
 Engati Chatbot API
