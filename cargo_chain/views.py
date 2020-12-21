@@ -1,12 +1,8 @@
 from django.shortcuts import render
-from django.core.mail import send_mail
+from django.core.mail import EmailMultiAlternatives
 from django.http import HttpResponse
 
 # Create your views here.
-
-"""def index(request):
-    return HttpResponse("<h1><em>Hello World!</em></h1>")"""
-
 
 def index(request):
     return render(request, 'index.html', {})
@@ -21,12 +17,18 @@ def contacts(request):
         message_contact = request.POST['message_contact']
 
         # send an email
-        send_mail(
-            "Appointment Request:",
-            message_contact,  # messages
-            email_contact,  # from email
-            ['cargochainkamloops@gmail.com', email_contact],  # To Email
-        )
+        # send_mail(
+        #     "Appointment Request:",
+        #     message_contact,  # messages
+        #     email_contact,  # from email
+        #     ['cargochainkamloops@gmail.com', email_contact],  # To Email
+        # )
+        subject, from_email, to = 'hello', 'from@example.com', 'to@example.com'
+        text_content = 'This is an important message.'
+        html_content = 'email.html'
+        msg = EmailMultiAlternatives(subject, text_content, from_email, ["cargochainkamloops@gmail.com"])
+        msg.attach_alternative(html_content, "text/html")
+        msg.send()
 
         return render(request, 'contacts.html', {'name_contact': name_contact})
     else:
