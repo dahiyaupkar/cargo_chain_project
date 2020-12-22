@@ -89,11 +89,12 @@ Then add the following to the bottom of settings.py:
 
 The following the git commands to push the repository to the master branch.
 Git Commands
->	git add .
->	git commit -am ""
->	git push heroku HEAD:master
+<code>	git add . </code>
+<code>	git commit -am </code>
+<code>	git push heroku HEAD:master</code>
 
 <h1>Meaning of all the files and where to look to make those changes: -</h1>
+
 •	__init__.py :- This is a blank Python script that due to its special name let’s Python know that this directory can be treated as a package.
 •	settings.py: - This is where you will store all your project settings.
 •	urls.py: - This is a Python script that will store all the URL patterns for your project. Basically, the different pages of your web application.
