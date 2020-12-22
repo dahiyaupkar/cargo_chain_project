@@ -66,6 +66,7 @@ First, and most importantly, Heroku web applications require a Procfile.
 
 This file is used to explicitly declare your application’s process types and entry points. It is located in the root of your repository.
 This Procfile requires Gunicorn, the production web server that is recommend for Django applications during testing.
+
 Installing gunicorn
 <code>$pip install gunicorn</code>
 
@@ -73,6 +74,7 @@ settings.py changes
 On Heroku, sensitive credentials are stored in the environment as config vars. This includes database connection information (named DATABASE_URL), which is traditionally hardcoded in Django applications.
 The django-heroku package automatically configures your Django application to work on Heroku. 
 It provides many niceties, including the reading of DATABASE_URL, logging configuration, a Heroku CI–compatible TestRunner, and automatically configures ‘staticfiles’ to “just work”.
+
 Installing django-heroku:
 <code>$pip install django-heroku</code>
 
@@ -82,7 +84,7 @@ import django_heroku
 
 Then add the following to the bottom of settings.py:
 # Activate Django-Heroku.
-django_heroku.settings(locals())
+<code>django_heroku.settings(locals())</code>
 
 The following the git commands to push the repository to the master branch.
 Git Commands
