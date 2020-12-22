@@ -50,29 +50,31 @@ Say you have got an existing project that you want to start tracking with git.
 Now, follow the second set of instructions, “Push an existing repository…”
 
 <code>$ git remote add origin git@github.com:username/new_repo</code>
+
 <code>$ git push -u origin master</code>
 
 Note: - Before configuring Django app for Heroku, first you need to push local repository to your GitHub account then only you can configure Django website for Heroku. 
 
-Note: -To access CargoChain.ca repository. 
-Please visit: -  https://github.com/dahiyaupkar/cargo_chain_project.git
+Note: -To access CargoChain.ca repository, 
+please visit: -  https://github.com/dahiyaupkar/cargo_chain_project.git
 To visit website: - https://cargochain.herokuapp.com/
 
 <h3>How to Configure Django website for Heroku (Hosting)</h3>
+
 First, and most importantly, Heroku web applications require a Procfile.
-web: gunicorn myproject.wsgi
+>>	web: gunicorn myproject.wsgi
 
 This file is used to explicitly declare your application’s process types and entry points. It is located in the root of your repository.
 This Procfile requires Gunicorn, the production web server that is recommend for Django applications during testing.
 Installing gunicorn
-$pip install gunicorn
+<code>$pip install gunicorn</code>
 
 settings.py changes
 On Heroku, sensitive credentials are stored in the environment as config vars. This includes database connection information (named DATABASE_URL), which is traditionally hardcoded in Django applications.
 The django-heroku package automatically configures your Django application to work on Heroku. 
 It provides many niceties, including the reading of DATABASE_URL, logging configuration, a Heroku CI–compatible TestRunner, and automatically configures ‘staticfiles’ to “just work”.
 Installing django-heroku:
-$pip install django-heroku
+<code>$pip install django-heroku</code>
 
 Note: - Be sure to add django-heroku to your “requirements.txt” file as well.
 Add the following import statement to the top of settings.py:
