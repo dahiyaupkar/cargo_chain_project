@@ -15,13 +15,6 @@ def contacts(request):
         email_contact = request.POST['email_contact']
         phone_contact = request.POST['phone_contact']
         message_contact = request.POST['message_contact']
-        #send an email
-        # send_mail(
-        #      "Appointment Request:",
-        #      message_contact,  # messages
-        #      email_contact,  # from email
-        #      ['cargochainkamloops@gmail.com', email_contact],  # To Email
-        #  )
         send_mail(
             "Appointment Request:",  # Subject
             "First Name : " + name_contact + "\n" +
