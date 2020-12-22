@@ -17,8 +17,8 @@ Virtual Environment acts as dependencies to the Python-related projects. It work
 Note: - There are many ways of creating a Virtual Environment, but which I used is shown below.
 
 <h3>Steps to create a Virtual Environment and run this project locally.</h3>
->1.	To get this project up and running you should start by having Python installed on your computer. It is advised you create a virtual environment to store your projects dependencies separately. 
->2.	You can create the new directory named 'Final Project' by using 'mkdir' command in your Desktop.
+* 1.	To get this project up and running you should start by having Python installed on your computer. It is advised you create a virtual environment to store your projects dependencies separately. 
+* 2.	You can create the new directory named 'Final Project' by using 'mkdir' command in your Desktop.
 >3.	Change the directory to 'Final Project' by using 'cd' command.
 >4.	You can install virtualenv with: -
 	conda create --name comp4980 django=1.9
