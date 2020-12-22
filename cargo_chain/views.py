@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.core.mail import EmailMultiAlternatives
+from django.core.mail import send_mail
 from django.http import HttpResponse
 
 # Create your views here.
@@ -15,24 +15,26 @@ def contacts(request):
         email_contact = request.POST['email_contact']
         phone_contact = request.POST['phone_contact']
         message_contact = request.POST['message_contact']
-
-        # send an email
+        #send an email
         # send_mail(
-        #     "Appointment Request:",
-        #     message_contact,  # messages
-        #     email_contact,  # from email
-        #     ['cargochainkamloops@gmail.com', email_contact],  # To Email
-        # )
-        subject, from_email, to = 'hello', 'from@example.com', 'to@example.com'
-        text_content = 'This is an important message.'
-        html_content = 'email.html'
-        msg = EmailMultiAlternatives(subject, text_content, from_email, ["cargochainkamloops@gmail.com"])
-        msg.attach_alternative(html_content, "text/html")
-        msg.send()
+        #      "Appointment Request:",
+        #      message_contact,  # messages
+        #      email_contact,  # from email
+        #      ['cargochainkamloops@gmail.com', email_contact],  # To Email
+        #  )
+        send_mail(
+            "Appointment Request:",  # Subject
+            "First Name : " + name_contact + "\n" +
+            "Last Name : " + lastname_contact + "\n" +
+            "Email Address : " + email_contact + "\n" +
+            "Phone No. : " + phone_contact + "\n" +
+            "Message info : " + message_contact,  # messages
+            email_contact,  # from email
+            ['cargochainkamloops@gmail.com', email_contact],  # To Email
+        )
         return render(request, 'contacts.html', {'name_contact': name_contact})
     else:
         return render(request, 'contacts.html', {})
-
 
 def domestic_removals(request):
     return render(request, 'domestic_removals.html', {})
