@@ -29,7 +29,6 @@ def contacts(request):
         msg = EmailMultiAlternatives(subject, text_content, from_email, ["cargochainkamloops@gmail.com"])
         msg.attach_alternative(html_content, "text/html")
         msg.send()
-
         return render(request, 'contacts.html', {'name_contact': name_contact})
     else:
         return render(request, 'contacts.html', {})
