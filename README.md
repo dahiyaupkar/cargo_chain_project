@@ -98,36 +98,36 @@ The following the git commands to push the repository to the master branch.
 
 <h1>Meaning of all the files and where to look to make those changes</h1>
 
->	__init__.py :
+>	__init__.py
 
 This is a blank Python script that due to its special name let’s Python know that this directory can be treated as a package.
->	settings.py: 
+>	settings.py
 
 This is where you will store all your project settings.
->	urls.py: 
+>	urls.py
 
 This is a Python script that will store all the URL patterns for your project. Basically, the different pages of your web application.
->	wsgi.py: 
+>	wsgi.py
 
 This is a Python script that acts as the Web Server Gateway Interface. It will later on help us deploy our web app to production.
->	manage.py: 
+>	manage.py
 
 This is a Python script that we will use a lot. It will be associates with many commands as we build our web app!
->	asgi.py: 
+>	asgi.py
 
 Asynchronous Server Gateway Interface, is the specification which Channels and Daphne are built upon, designed to untie Channels apps from a specific application server and provide a common way to write application and middleware code.
 >	cargo_chain folder: 
 
 This directory stores database specific information as it relates to the models.
->	templates folder: 
+>	templates folder
 
 Templates are a key part to understanding how Django really works and interacts with your website. The template will contain the static parts of an html page (parts that are always the same).
->	template tags: 
+>	template tags
 
 This syntax allows you to inject dynamic content that your Django App’s views will produce, effecting the final HTML.
->	static folder: 
+>	static folder
 
 This folder contains other types of media for template files.
->	db.sqlite3: 
+>	db.sqlite3
 
 It is a library that provides a lightweight disk-based database that doesn't require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language.
