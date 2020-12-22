@@ -62,7 +62,7 @@ To visit website: - https://cargochain.herokuapp.com/
 <h3>How to Configure Django website for Heroku (Hosting)</h3>
 
 First, and most importantly, Heroku web applications require a Procfile.
->>	web: gunicorn myproject.wsgi
+>	web: gunicorn myproject.wsgi
 
 This file is used to explicitly declare your application’s process types and entry points. It is located in the root of your repository.
 This Procfile requires Gunicorn, the production web server that is recommend for Django applications during testing.
