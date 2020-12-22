@@ -83,8 +83,9 @@ Add the following import statement to the top of settings.py:
 import django_heroku
 
 Then add the following to the bottom of settings.py:
-# Activate Django-Heroku.
-<code>django_heroku.settings(locals())</code>
+<code># Activate Django-Heroku.
+
+django_heroku.settings(locals())</code>
 
 The following the git commands to push the repository to the master branch.
 Git Commands
