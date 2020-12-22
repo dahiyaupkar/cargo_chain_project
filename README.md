@@ -18,25 +18,25 @@ Note: - There are many ways of creating a Virtual Environment, but which I used 
 
 <h3>Steps to create a Virtual Environment and run this project locally.</h3>
 
-1.	To get this project up and running you should start by having Python installed on your computer. It is advised you create a virtual environment to store your projects dependencies separately.
+*	1.	To get this project up and running you should start by having Python installed on your computer. It is advised you create a virtual environment to store your projects dependencies separately.
 
-* 	2.You can create the new directory named 'Final Project' by using 'mkdir' command in your Desktop.
+* 	2.	You can create the new directory named 'Final Project' by using 'mkdir' command in your Desktop.
 
-*	3.Change the directory to 'Final Project' by using 'cd' command.
-*	4.You can install virtualenv with: -
+*	3.	Change the directory to 'Final Project' by using 'cd' command.
+*	4.	You can install virtualenv with: -
 	conda create --name comp4980 django=1.9
-*	5.For Activating your Virtual Environment: - The Virtual Environment can be activated by using the 'activate' command where the 'comp4980' folder needs to be enabled or activated. The 'comp4980' will be shown in the parenthesis if you've successfully activated your Virtual Environment.
-*	6.Now you can run the project with this command: python manage.py runserver
+*	5.	For Activating your Virtual Environment: - The Virtual Environment can be activated by using the 'activate' command where the 'comp4980' folder needs to be enabled or activated. The 'comp4980' will be shown in the parenthesis if you've successfully activated your Virtual Environment.
+*	6.	Now you can run the project with this command: python manage.py runserver
   
 Note: Linux and Mac users need to use 'python3' specifically in the command because Python of version 2 is already pre-installed in their computer. Also, it is preferable to use version 3 as of now Python will not support version 2 after the year 2020.
 
 <h3>A new repo from an existing project</h3>
 Say you have got an existing project that you want to start tracking with git.
-1.	Go into the directory containing the project.
-2.	Type $git init.
-3.	Type $git add to add all of the relevant files.
-4.	You’ll probably want to create a .gitignore file right away, to indicate all of the files you don’t want to track. Use $git add .gitignore, too.
-5.	Type $git commit.
+*	1.	Go into the directory containing the project.
+*	2.	Type $git init.
+*	3.	Type $git add to add all of the relevant files.
+*	4.	You’ll probably want to create a .gitignore file right away, to indicate all of the files you don’t want to track. Use $git add .gitignore, too.
+*	5.	Type $git commit.
 Connect it to github
 1.	You have now got a local git repository. You can use git locally, like that, if you want. But if you want the thing to have a home on github, do the following.
 2.	Go to github.
