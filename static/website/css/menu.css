@@ -14,7 +14,7 @@
 /*First level styles */			
 .main-menu > ul > li > a {color: #333;padding: 0 12px 20px  12px; font-size:13px; text-transform:uppercase;}
 .sticky .main-menu > ul > li > a {color: #333;}
-.main-menu > ul > li:hover > a {color: #629976;}
+.main-menu > ul > li:hover > a {color: #ff5829;}
 
 /* Opacity mask when left open */
 .layer {display: none; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 100; min-height: 100%; background-color: #000; opacity: 0; z-index:9999;}
@@ -51,7 +51,7 @@ a.dropdown-toggle.icon-search{display: inline-block;}
 .main-menu ul ul li a {font-size: 12px;color: #666;border-bottom:1px solid #ededed;display: block;}
 .main-menu ul ul li:last-child a {border-bottom:none;}
 
-.main-menu ul ul li:hover > a {background-color:#f9f9f9;color:#629976;}
+.main-menu ul ul li:hover > a {background-color:#f9f9f9;color:#ff5829;}
 	
 /* Megamenu */
 .main-menu ul li.megamenu {position:static}
