@@ -13,7 +13,7 @@
 					</div>
 					<div class="col-md-4 col-sm-4" id="position">
 						<ul >
-							<li><a href="index.html">Home</a></li>
+							<li><a href="{% url 'index' %}">Home</a></li>
 							<li>Active page</li>
 						</ul>
 					</div>
@@ -77,10 +77,6 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="form-group">
-                            <label>Are you human? 3 + 1 =</label>
-                            <input type="text" id="verify_contact" class=" form-control">
-                            </div>
                             <input type="submit" value="Submit" class="btn_1 green medium add_bottom_30" id="submit-contact"/>
                         </div>
                     </div>
@@ -103,7 +99,7 @@
                                 <li><strong>Book a move now!</strong><p class="nopadding">It's never to late. Book Now....!<br><a href="mailto:jass.grewal@cargochain.ca">jass.grewal@cargochain.ca</a></p></li>
                             </ul>
                     </div>
-                    <div class="quote_banner"><a href="quotation_wizard.html">Need a quotation?</a></div>
+                    <div class="quote_banner"><a href="{% url 'quotation_wizard' %}">Need a quotation?</a></div>
                 </div><!-- End col-md-3 -->
             </div><!-- End row -->
         </div><!-- End container -->

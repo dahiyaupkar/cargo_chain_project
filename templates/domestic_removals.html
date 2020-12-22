@@ -14,7 +14,7 @@
 					</div>
 					<div class="col-md-4 col-sm-4" id="position">
 						<ul >
-							<li><a href="#">Home</a></li>
+							<li><a href="{% url 'index' %}">Home</a></li>
 							<li>Active page</li>
 						</ul>
 					</div>
@@ -120,17 +120,16 @@
                 <div class="col-md-3">
                 	<div class="box_style_1">
                     	<ul id="cat_nav">
-                            <li><a href="#">Domestic removals</a></li>
-                            <li><a href="international_removals.html">International removals</a></li>
-                            <li><a href="special_furnitures.html">Special furnitures</a></li>
-                            <li><a href="reassembly.html">Reassembly &amp; Packing</a></li>
+                            <li><a href="{% url 'international_removals' %}">Loading/Unloading</a></li>
+                            <li><a href="{% url 'special_furnitures' %}">Delivery</a></li>
+                            <li><a href="{% url 'contacts' %}">Contact Us</a></li>
                         </ul>
                         <hr>
                         <h5>Did you find what you need?</h5>
-                        <p class="nopadding">Ad sed apeirian senserit gloriatur, eu iusto ubique impetus quo.<br><a href="contacts.html" class="link_normal">Contact us</a></p>
+                        <p class="nopadding">Ad sed apeirian senserit gloriatur, eu iusto ubique impetus quo.<br><a href="{% url 'contacts' %}" class="link_normal">Contact us</a></p>
                     </div><!-- End Box_style_1 -->
             
-                    <div class="quote_banner"><a href="quotation.html">Need a quotation?</a></div>
+                    <div class="quote_banner"><a href="{% url 'quotation_wizard' %}">Need a quotation?</a></div>
                     
                     <div class="box_style_2">
                     	<h4>Removal tips</h4>
@@ -146,7 +145,6 @@
                                 <li>Clearly mark boxes containing fragile goods.</li>
                                 <li>Pack a suitcase with clothes and toiletries like you’re going on a trip for a few days.</li>
                             </ul>
-                            <p><a href="#" class="link_normal">Read more</a></p>
                     </div><!-- End Box_style_2 -->
 
                 </div><!-- End col-md-3 -->
