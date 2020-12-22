@@ -41,13 +41,14 @@ Say you have got an existing project that you want to start tracking with git.
 *	5.	Type $git commit.
 
 <h3>Connect it to github</h3>
-1.	You have now got a local git repository. You can use git locally, like that, if you want. But if you want the thing to have a home on github, do the following.
-2.	Go to github.
-3.	Log in to your account.
-4.	Click the new repository button in the top-right. You will have an option there to initialize the repository with a README file, but I do not.
-5.	Click the “Create repository” button.
+*	1.	You have now got a local git repository. You can use git locally, like that, if you want. But if you want the thing to have a home on github, do the following.
+*	2.	Go to github.
+*	3.	Log in to your account.
+*	4.	Click the new repository button in the top-right. You will have an option there to initialize the repository with a README file, but I do not.
+*	5.	Click the “Create repository” button.
 Now, follow the second set of instructions, “Push an existing repository…”
-$ git remote add origin git@github.com:username/new_repo
+
+'$ git remote add origin git@github.com:username/new_repo'
 $ git push -u origin master
 Note: - Before configuring Django app for Heroku, first you need to push local repository to your GitHub account then only you can configure Django website for Heroku. 
 Note: -To access CargoChain.ca repository. 
