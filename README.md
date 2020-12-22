@@ -33,6 +33,7 @@ Note: Linux and Mac users need to use 'python3' specifically in the command beca
 <h3>A new repo from an existing project</h3>
 Say you have got an existing project that you want to start tracking with git.
 
+
 *	1.	Go into the directory containing the project.
 *	2.	Type $git init.
 *	3.	Type $git add to add all of the relevant files.
