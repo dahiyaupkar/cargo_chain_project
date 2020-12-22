@@ -92,7 +92,6 @@ The following the git commands to push the repository to the master branch.
 <code>	git add . </code>
 
 <code>	git commit -am </code>
-
 <code>	git push heroku HEAD:master</code>
 
 <h1>Meaning of all the files and where to look to make those changes: -</h1>
