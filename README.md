@@ -32,12 +32,14 @@ Note: Linux and Mac users need to use 'python3' specifically in the command beca
 
 <h3>A new repo from an existing project</h3>
 Say you have got an existing project that you want to start tracking with git.
+
 *	1.	Go into the directory containing the project.
 *	2.	Type $git init.
 *	3.	Type $git add to add all of the relevant files.
 *	4.	You’ll probably want to create a .gitignore file right away, to indicate all of the files you don’t want to track. Use $git add .gitignore, too.
 *	5.	Type $git commit.
-Connect it to github
+
+<h3>Connect it to github</h3>
 1.	You have now got a local git repository. You can use git locally, like that, if you want. But if you want the thing to have a home on github, do the following.
 2.	Go to github.
 3.	Log in to your account.
