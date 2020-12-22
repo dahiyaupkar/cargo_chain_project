@@ -84,13 +84,14 @@ import django_heroku
 
 Then add the following to the bottom of settings.py:
 <code># Activate Django-Heroku.</code>
+
 <code>django_heroku.settings(locals())</code>
 
 The following the git commands to push the repository to the master branch.
 Git Commands
-git add .
-git commit -am ""
-git push heroku HEAD:master
+>	git add .
+>	git commit -am ""
+>	git push heroku HEAD:master
 
 <h1>Meaning of all the files and where to look to make those changes: -</h1>
 •	__init__.py :- This is a blank Python script that due to its special name let’s Python know that this directory can be treated as a package.
