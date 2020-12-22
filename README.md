@@ -18,7 +18,7 @@ Note: - There are many ways of creating a Virtual Environment, but which I used 
 
 <h3>Steps to create a Virtual Environment and run this project locally.</h3>
 
-* 	1.	To get this project up and running you should start by having Python installed on your computer. It is advised you create a virtual environment to store your projects dependencies separately.
+1.	To get this project up and running you should start by having Python installed on your computer. It is advised you create a virtual environment to store your projects dependencies separately.
 
 * 	2.You can create the new directory named 'Final Project' by using 'mkdir' command in your Desktop.
 
