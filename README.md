@@ -51,7 +51,9 @@ Now, follow the second set of instructions, “Push an existing repository…”
 
 <code>$ git remote add origin git@github.com:username/new_repo</code>
 <code>$ git push -u origin master</code>
+
 Note: - Before configuring Django app for Heroku, first you need to push local repository to your GitHub account then only you can configure Django website for Heroku. 
+
 Note: -To access CargoChain.ca repository. 
 Please visit: -  https://github.com/dahiyaupkar/cargo_chain_project.git
 To visit website: - https://cargochain.herokuapp.com/
