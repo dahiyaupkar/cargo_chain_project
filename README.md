@@ -50,6 +50,7 @@ Say you have got an existing project that you want to start tracking with git.
 Now, follow the second set of instructions, “Push an existing repository…”
 
 '$ git remote add origin git@github.com:username/new_repo'
+
 '$ git push -u origin master'
 Note: - Before configuring Django app for Heroku, first you need to push local repository to your GitHub account then only you can configure Django website for Heroku. 
 Note: -To access CargoChain.ca repository. 
