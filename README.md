@@ -14,6 +14,7 @@ Engati Chatbot API
 
 <h2>Virtual Environment</h2>
 Virtual Environment acts as dependencies to the Python-related projects. It works as a self-contained container or an isolated environment where all the Python-related packages and the required versions related to a specific project are installed. Since newer versions of Python, Django, or packages, etc. will roll out, through the help of a Virtual Environment, you can work with older versions that are specific to your project. In Summary, you can start an independent project related to Django of version 2.0, whereas another independent project related to Django of version 3.0 can be started on the same computer.
+
 Note: - There are many ways of creating a Virtual Environment, but which I used is shown below.
 
 <h3>Steps to create a Virtual Environment and run this project locally.</h3>
