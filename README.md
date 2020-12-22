@@ -79,8 +79,9 @@ Installing django-heroku:
 <code>$pip install django-heroku</code>
 
 Note: - Be sure to add django-heroku to your “requirements.txt” file as well.
+
 Add the following import statement to the top of settings.py:
-import django_heroku
+<code>import django_heroku</code>
 
 Then add the following to the bottom of settings.py:
 <code># Activate Django-Heroku.</code>
