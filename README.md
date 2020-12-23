@@ -35,10 +35,10 @@ Say you have got an existing project that you want to start tracking with git.
 
 
 *	1.	Go into the directory containing the project.
-*	2.	Type $git init.
-*	3.	Type $git add to add all of the relevant files.
-*	4.	You’ll probably want to create a .gitignore file right away, to indicate all of the files you don’t want to track. Use $git add .gitignore, too.
-*	5.	Type $git commit.
+*	2.	Type <code>$git init</code>.
+*	3.	Type <code>$git add to add all of the relevant files</code>.
+*	4.	You’ll probably want to create a .gitignore file right away, to indicate all of the files you don’t want to track. Use <code>$git add .gitignore</code>, too.
+*	5.	Type <code>$git commit</code>.
 
 <h3>Connect it to github</h3>
 
