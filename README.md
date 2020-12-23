@@ -24,8 +24,7 @@ Note: - There are many ways of creating a Virtual Environment, but which I used 
 * 	2.	You can create the new directory named 'Final Project' by using 'mkdir' command in your Desktop.
 
 *	3.	Change the directory to 'Final Project' by using 'cd' command.
-*	4.	You can install virtualenv with: -
-	conda create --name comp4980 django=1.9
+*	4.	You can install virtualenv with:  <code>conda create --name comp4980 django=1.9</code>
 *	5.	For Activating your Virtual Environment: - The Virtual Environment can be activated by using the 'activate' command where the 'comp4980' folder needs to be enabled or activated. The 'comp4980' will be shown in the parenthesis if you've successfully activated your Virtual Environment.
 *	6.	Now you can run the project with this command: python manage.py runserver
   
