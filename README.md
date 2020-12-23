@@ -26,9 +26,9 @@ Note: - There are many ways of creating a Virtual Environment, but which I used 
 *	3.	Change the directory to 'Final Project' by using 'cd' command.
 *	4.	You can install virtualenv with:  <code>conda create --name comp4980 django=1.9</code>
 *	5.	For Activating your Virtual Environment: - The Virtual Environment can be activated by using the 'activate' command where the 'comp4980' folder needs to be enabled or activated. The 'comp4980' will be shown in the parenthesis if you've successfully activated your Virtual Environment.
-*	6.	Now you can run the project with this command: python manage.py runserver
+*	6.	Now you can run the project with this command: <code>python manage.py runserver</code>
   
-Note: Linux and Mac users need to use 'python3' specifically in the command because Python of version 2 is already pre-installed in their computer. Also, it is preferable to use version 3 as of now Python will not support version 2 after the year 2020.
+Note: Linux and Mac users need to use <strong>python3</strong> specifically in the command because Python of version 2 is already pre-installed in their computer. Also, it is preferable to use version 3 as of now Python will not support version 2 after the year 2020.
 
 <h3>A new repo from an existing project</h3>
 Say you have got an existing project that you want to start tracking with git.
