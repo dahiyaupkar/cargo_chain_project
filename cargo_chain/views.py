@@ -50,6 +50,7 @@ def quotation_wizard(request):
         street_pickup = request.POST['street_pickup']
         street_drop = request.POST['street_drop']
         elevator_pickup = request.POST['elevator_pickup']
+        date_pickup = request.POST['date_pickup']
         message_general = request.POST['message_general']
 
         # send an email
@@ -62,6 +63,7 @@ def quotation_wizard(request):
             "Moving from : " + street_pickup + "\n" +
             "Moving to : " + street_drop + "\n" +
             "Type of Move : " + elevator_pickup + "\n" +
+            "Preferred Time : " + date_pickup + "\n" +
             "Additional info : " + message_general,  # messages
             email_quote,  # from email
             ['cargochainkamloops@gmail.com', email_quote],  # To Email
