@@ -116,7 +116,7 @@ This is a Python script that we will use a lot. It will be associates with many 
 >	asgi.py
 
 Asynchronous Server Gateway Interface, is the specification which Channels and Daphne are built upon, designed to untie Channels apps from a specific application server and provide a common way to write application and middleware code.
->	cargo_chain folder: 
+>	cargo_chain folder 
 
 This directory stores database specific information as it relates to the models.
 >	templates folder
