@@ -86,7 +86,7 @@ Then add the following to the bottom of settings.py:
 
 <code>django_heroku.settings(locals())</code>
 
-The following the git commands to push the repository to the master branch.
+Use the following git commands to push the repository to the master branch.
 <H5>Git Commands</H5>
 <code>	git add . </code>
 
