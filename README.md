@@ -98,7 +98,6 @@ The following the git commands to push the repository to the master branch.
 <code>	git push heroku HEAD:master</code>
 
 <h1>Meaning of all the files and where to look to make those changes</h1>
-
 >	__init__.py
 
 This is a blank Python script that due to its special name let’s Python know that this directory can be treated as a package.
